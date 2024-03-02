@@ -37,16 +37,17 @@ function App() {
           <div className='temp'>
              {data.main ? <h1>{data.main.temp.toFixed()}°F</h1>:null}
            </div>
-           <div className='clouds'>
-            {data.weather ? <p>{data.weather[0].main}</p> : null}
-            
-          </div>
-          {data.name !== undefined &&
-           <div className='description'>
-            <img src={`https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`}></img>
-            </div>
+           {data.name !== undefined &&
+            <div className='clouds'>
+              <img src={`https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`}></img>
 
-}
+              <div className='description'>
+            {data.weather ? <p>{data.weather[0].main}</p> : null}
+
+          </div>
+          </div>
+
+          }
         </div>
 
 
