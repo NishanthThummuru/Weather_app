@@ -88,6 +88,14 @@ justify-content: space-between;
   transform-origin: 0 0;
   transform: rotate(0deg);
 }
+@media(max-width:622px){
+  .app .description{
+    position: absolute;
+    top: 280px;
+    left: 0px;
+
+  }
+}
 .app .bottom{ 
   display: flex;
 justify-content: space-evenly;
